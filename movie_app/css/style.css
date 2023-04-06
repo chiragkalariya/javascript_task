@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(120deg, #2B3467 0%, #BAD7E9 35%, #FCFFE7 100%);
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #2B3467;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}   
+header .search {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #FCFFE7;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #FCFFE7;
+}
+header .search::placeholder {
+    color: #FCFFE7;
+}
+.movieapp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.movie {
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    object-fit: cover;
+    color: #FCFFE7;
+    background-color: #BAD7E9;
+    position: relative;
+    overflow: hidden;
+}
+.movie-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #FCFFE7;
+    letter-spacing: 1px;
+}
+.movie-info span {
+    background-color: #EB455F;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.movie-info span.green {
+    color: green;
+}
+.movie-info span.orange {
+    color: orange;
+}
+.movie-info span.red {
+    color: red;
+}
+
+.overview {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: 0.5s ease-in;
+    color: #EB455F;
+    max-height: 100%;
+    overflow: auto;
+}
+.overview h4 {
+    color: #2d2d2d;
+    margin-bottom: 1.5rem;
+}
+.movie:hover .overview {
+    transform: translateY(0);
+}

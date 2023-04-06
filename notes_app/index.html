@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="notes">
+        <div class="container">
+            <h1>Build Your Notes</h1>
+            <div class="notes_inner">
+                <div class="addnote" id="addnotebtn">
+                    <div class="addicon">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <p>Add new note</p>
+                </div>
+                <div id="note-list">
+                </div>
+                <!-- <div class="note">
+                    <h2>Note title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis culpa iusto nemo totam corporis provident.</p>
+                    <hr>
+                    <div class="note_footer">
+                        <span>Show time</span>
+                        <span class="setnote" id="set-note"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                            <div class="setnote_popup" id="setnote-popup">
+                                <button id="edit-note">Edit</button>
+                                <button>Delete</button>
+                            </div>
+                        </span>
+                    </div>
+                </div> -->
+                
+            </div>
+            <div class="addnote_popup" id="addnote-popup">
+                <div class="close_pop" id="close-popup">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="addnote_inner">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    <label for="">Note Title</label>
+                    <input type="text" placeholder="Enter Title hear" id="note-title">
+                    <label for="">Note Description</label>
+                    <textarea name="" id="note-description" rows="5" placeholder="Enter Description hear"></textarea>
+                    <!-- <input type="text" placeholder="Add Description"> -->
+                    <button id="save-note" onclick="addData()">Save</button>
+                </div>
+            </div>
+            <div class="removenote_popup">
+                
+            </div>
+        </div>
+    </section>
+    <!-- <input type="text" id="NoteTitle">
+    <button id="submit">submit</button> -->
+    <script src="js/scripttwo.js"></script>
+</body>
+</html>

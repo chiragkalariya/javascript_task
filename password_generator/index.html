@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator app</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="password-container">
+            <h2>Password Generator</h2>
+            <div class="password_inner">
+                <div class="showinput">
+                    <!-- <input type="text" > -->
+                    <textarea name="" id="showpassword" disabled></textarea>
+                    <span id="copypassword"><i class="fa fa-clipboard" aria-hidden="true"></i></span>
+                </div>
+                <div class="form-group">
+                    <label for="length">Password length</label>
+                    <input type="number" class="getlength" id="getlength">
+                </div>
+                <div class="form-group">
+                    <label for="uppercase">Include uppercase letters</label>
+                    <input class="checkbox" type="checkbox" id="uppercase">
+                </div>
+                <div class="form-group">
+                    <label for="lowercase">Include lowercase letters</label>
+                    <input class="checkbox" type="checkbox" id="lowercase">
+                </div>
+                <div class="form-group">
+                    <label for="numbers">Include numbers</label>
+                    <input class="checkbox" type="checkbox" id="numbers">
+                </div>
+                <div class="form-group">
+                    <label for="symbols">Include symbols</label>
+                    <input class="checkbox" type="checkbox" id="symbols">
+                </div>
+                <button id="submit" title="copy">Generate password</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

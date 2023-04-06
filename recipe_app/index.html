@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="recipe_container">
+        <header>
+            <input type="text" id="search-term">
+            <button id="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </header>
+        <div class="fav_container">
+            <h3>Favourite Meals</h3>
+            <ul class="fav_meals" id="fav-meals">
+                <!-- <li>
+                        <img src="img/food1.jpg" alt="food">
+                        <span>item1</span>
+                    </li>
+                    <li>
+                        <img src="img/food2.jpg" alt="food">
+                        <span>item2</span>
+                    </li>
+                    <li>
+                        <img src="img/food3.jpg" alt="food">
+                        <span>item3</span>
+                    </li>
+                    <li>
+                        <img src="img/food1.jpg" alt="food">
+                        <span>item1</span>
+                    </li> -->
+                <!-- <li>
+                        <img src="img/food2.jpg" alt="food">
+                        <span>item2</span>
+                    </li>
+                    <li>
+                        <img src="img/food3.jpg" alt="food">
+                        <span>item3</span>
+                    </li> -->
+            </ul>
+        </div>
+        <div class="meals">
+            <div class="meal_inner" id="meal">
+
+            </div>
+        </div>
+        <div class="meal-info-container hidden" id="meal-popup">
+            <div class="popup">
+                <button id="close-popup" class="close-popup"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <div class="meal-info" id="meal-info">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

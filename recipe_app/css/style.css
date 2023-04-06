@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    background: linear-gradient(to right, #ffffff, #ece9e6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.recipe_container {
+    background-color: #ffffff;
+    width: 400px;
+    box-shadow: 0 0 5px 2px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+header input {
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    background-color: #eee;
+    font-family: inherit;
+}
+header button {
+    background-color: transparent;
+    color: #aaa;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.fav_container {
+    padding: 1rem;
+    text-align: center;
+    background-color: #efefef;
+}
+.fav_container h3 {
+    margin-bottom: 1.5rem;
+}
+.fav_meals {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
+.fav_meals span {
+    display: -webkit-box;
+    font-size: 0.8rem;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 95%;
+    -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+.fav_meals li {
+    width: 85px;
+    padding: 10px 0;
+    position: relative;
+}
+.fav_meals li .clear {
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    font-size: 1rem;
+    color: #2d2d2d;
+    opacity: 0; 
+    transition: 0.6s;
+}
+.fav_meals li:hover .clear {
+    opacity: 1;
+}
+.fav_meals li img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 75px;
+    width: 75px;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 5px 2px #3333331a;
+} 
+
+.meal_inner {
+    border-radius: 3px;
+    box-shadow: 0 0 10px 2px #3333331a;
+    margin: 1.5rem;
+    cursor: pointer;
+}
+.meal_inner .meal_header {
+    position: relative;
+} 
+.meal_header .random {
+    position: absolute;
+    top: 10px;
+    background-color: #ffffff;
+    padding: .25rem .5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.meal_header img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.meal_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.meal_body .favbtn {
+    background-color: transparent;
+    border: none;
+}
+.meal_body .favbtn i {
+    background-color: transparent;
+    color: gray;
+    font-size: 1.2rem;
+}
+.meal_body .favbtn.active i {
+    color: red;
+}
+
+.meal-info-container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meal-info-container.hidden {
+    opacity: 0;
+    user-select: none;
+    display: none;
+}
+.meal-info {
+    height: 500px;
+}
+.popup {
+    background-color: #ffffff;
+    max-width: 500px;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    padding: 30px 15px;
+    border-radius: 5px;
+    position: relative;
+    overflow: auto; 
+}
+.popup img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.popup h1 {
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+.popup button.close-popup {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 1.5rem;
+    opacity: .5;
+    cursor: pointer;
+    transition: .5s;
+    padding: 5px;
+}
+.popup button.close-popup:hover {
+    opacity: 1;
+    pointer-events: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #2d2d2d; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2d2d2d; 
+  }
